@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ JPDFSigner - Sign PDFs online using smartcards (German.xml)
+ Copyright (C) 2013  Ruhr-Universitaet Bochum - Daniel Moczarski, Haiko te Neues
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
+-->
+<jpdfsigner_language>
+  <displayedLanguageText>Deutsch</displayedLanguageText>
+  <base64Icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGzSURBVHjaYvTxcWb4+53h3z8GZpZff/79+v3n/7/fDAz/GHAAgABi+f37e3FxOZD1Dwz+/v3z9y+E/AMFv3//+Qumfv9et241QACxMDExAVWfOHkJJAEW/gUEP0EQDn78+AHE/gFOQJUAAcQiy8Ag8O+fLFj1n1+/QDp+/gQioK7fP378+vkDqOH39x9A/RJ/gE5lAAhAYhzcAACCQBDkgRXRjP034R0IaDTZTFZn0DItot37S94KLOINerEcI7aKHAHE8v/3r/9//zIA1f36/R+o4tevf1ANYNVA9P07RD9IJQMDQACxADHD3z8Ig4GMHz+AqqHagKp//fwLVA0U//v7LwMDQACx/LZiYFD7/5/53/+///79BqK/EMZ/UPACSYa/v/8DyX9A0oTxx2EGgABi+a/H8F/m339BoCoQ+g8kgRaCQvgPJJiBYmAuw39hxn+uDAABxMLwi+E/0PusRkwMvxhBGoDkH4b/v/+D2EDyz///QB1/QLb8+sP0lQEggFh+vGXYM2/SP6A2Zoaf30Ex/J+PgekHwz9gQDAz/P0FYrAyMfz7wcDAzPDtFwNAgAEAd3SIyRitX1gAAAAASUVORK5CYII=</base64Icon>
+  <fields>
+    <v0 id="0">Information</v0>
+    <v1 id="1">Frage</v1>
+    <v2 id="2">Warnung</v2>
+    <v3 id="3">Fehler</v3>
+    <v4 id="4">Ruhr-Universität Bochum | JPDFSigner - Signieren von PDF-Dokumenten</v4>
+    <v5 id="5">Ihre Java-Version wird nicht unterstützt. -br- Bitte verwenden Sie mindestens Version -br-Das Programm wird jetzt beendet.</v5>
+    <v6 id="6">Es kann kein Quell-PDF-Dokument ermittelt werden.-br-Das Programm wird jetzt beendet.</v6>
+    <v7 id="7">Dem PDF-Dokument wurde kein Identifier/Dateiname übergeben.-br-Das Programm wird jetzt beendet.</v7>
+    <v8 id="8">Der Zielserver für das signierte PDF-Dokument ist nicht valide.-br-Das Programm wird jetzt beendet.</v8>
+    <v9 id="9">Dem POST-Request wurde kein Identifier übergeben.-br-Das Programm wird jetzt beendet.</v9>
+    <v10 id="10">Es ist ein schwerer Ausnahmefehler aufgetreten.-br-Das Programm wird jetzt beendet.</v10>
+    <v11 id="11">Das Dokument konnte nicht gespeichert werden.</v11>
+    <v12 id="12">Das PDF-Dokument ist nicht valide und kann deshalb nicht signiert werden.-br-Bitte wenden Sie sich an das Supportteam</v12>
+    <v13 id="13">Die Konfiguration wurde gespeichert.</v13>
+    <v14 id="14">Die Konfiguration konnte nicht gespeichert werden.</v14>
+    <v15 id="15">Es ist ein Problem mit den Zertifikaten auf ihrer RUBCard aufgetreten.</v15>
+    <v16 id="16">Beim Signiervorgang ist ein unbekannter Fehler aufgetreten.</v16>
+    <v17 id="17">Die eingegebene PIN ist abgelaufen.</v17>
+    <v18 id="18">Die eingegebene PIN ist falsch</v18>
+    <v19 id="19">Die eingegebene PIN ist gesperrt.</v19>
+    <v20 id="20">Die eingegebene PIN ist ungültig.</v20>
+    <v21 id="21">Die eingegebene PIN muss numerisch und genau sechs Zeichen lang sein.</v21>
+    <v22 id="22">Bitte stecken Sie ihre RUBCard in den Smardcard-Leser.</v22>
+    <v23 id="23">Der Kryptoprovider konnte ihre Karte nicht korrekt initialisieren.</v23>
+    <v24 id="24">Beim Kartenzugriff ist ein Fehler aufgetreten.</v24>
+    <v25 id="25">Der Vorgang wurde abgebrochen.</v25>
+    <v26 id="26">Das in der Konfiguration angegenene Lesegerät wurde entfernt.-br-Bitte wählen Sie ein andere in den Einstellungen aus.</v26>
+    <v27 id="27">Es liegt ein Fehler im Lesegerät vor.</v27>
+    <v28 id="28">Der Kryptoprovider scheint noch eingeloggt zu sein.-br-Bitte ziehen und stecken Sie ihre Karte wieder ein und versuchen sie es erneut.</v28>
+    <v29 id="29">Es ist ein unbekannter Fehler im Kryptoprovider aufgetreten.</v29>
+    <v30 id="30">Der Kryptoprovider konnte nicht geladen werden.-br-Die Datei wurde nicht gefunden.</v30>
+    <v31 id="31">Beim lesen/schreiben einer Datei ist ein Fehler aufgetreten.</v31>
+    <v32 id="32">Der Kryptoprovider konnte nicht ordnungsgemäß entladen werden.</v32>
+    <v33 id="33">Der angestoßene Prozess reagiert nicht mehr.-br-Bitte versuchen Sie es erneut.</v33>
+    <v34 id="34">Es ist ein unbekannter Fehler im Kryptomodul aufgetreten.</v34>
+    <v35 id="35">Bitte zeichnen Sie ein Rechteck mit der rechten Maustaste.-br-Platzieren Sie anschließend den Stempel und klicken Sie mit der linken Maustaste um den Signaturvorgang zu starten.</v35>
+    <v36 id="36">Es ist ein Fehler beim Signaturprozess aufgetreten.</v36>
+    <v37 id="37">Es ist ein Fehler beim Hochladen des PDF-Dokuments aufgetreten.</v37>
+    <v38 id="38">Der PDF-Uploadserver ist nicht erreichbar.</v38>
+    <v39 id="39">Es ist ein Fehler im Uploadmodul aufgetreten.-br-Das Programm wird jetzt beendet.</v39>
+    <v40 id="40">Die signierten PDF-Dokumente sind erfolgreich auf den Server geladen worden.-br-Das Programm wird jetzt beendet und sie werden weitergeleitet.</v40>
+    <v41 id="41">Beim Hochladen des PDF-Dokuments ist ein Fehler aufgetreten. Weitere Informationen können der nachfolgenden Seite entnommen werden.-br-Das Programm wird jetzt beendet.</v41>
+    <v42 id="42">Der Status des Uploads konnte nicht ermittelt werden.-br-Weitere Informationen können der nachfolgenden Seite entnommen werden.-br-Das Programm wird jetzt beendet.</v42>
+    <v43 id="43">Der Uploadserver antwortet nicht.-br-Weitere Informationen können der nachfolgenden Seite entnommen werden.-br-Das Programm wird jetzt beendet.</v43>
+    <v44 id="44">Es ist ein Fehler im System aufgetreten.-br-Weitere Informationen können der nachfolgenden Seite entnommen werden.-br-Das Programm wird jetzt beendet.</v44>
+    <v45 id="45">Pfad auswählen ...</v45>
+    <v46 id="46">Beim Ausführen des Configurators ist ein Fehler aufgetreten.-br-Das Programm wird jetzt beendet.</v46>
+    <v47 id="47">Bitte wählen Sie den Smartcard-Leser aus, der für die Signatur verwendet werden soll.</v47>
+    <v48 id="48">Bitte geben Sie den Pfad zu einem Kryptoprovider an:</v48>
+    <v49 id="49">Durchsuchen</v49>
+    <v50 id="50">0=Kartenleser</v50>
+    <v51 id="51">1=Bibliotheken</v51>
+    <v52 id="52">Bitte warten - Lade Kartenleser ...</v52>
+    <v53 id="53">Keine Kartenleser gefunden</v53>
+    <v54 id="54">Fehler im Kryptoprovider</v54>
+    <v55 id="55">GUI konnte nicht aufgebaut werden.</v55>
+    <v56 id="56">Configurating</v56>
+    <v57 id="57">PDF</v57>
+    <v58 id="58">Verifiziere PDF</v58>
+    <v59 id="59">PDF-Anhänge</v59>
+    <v60 id="60">Die automatische Konfiguration konnte nicht vollständig durchgeführt werden.-br-Bitte geben Sie den Pfad zum Kryptocardprovider manuell an.</v60>
+    <v61 id="61">Die automatische Konfiguration konnte keinen Smartcard-Leser ermitteln.-br-Bitte wählen Sie ein Lesegerät in den Einstellungen aus.</v61>
+    <v62 id="62">tooltip=Nach links blättern</v62>
+    <v63 id="63">tooltip=Nach rechts blättern</v63>
+    <v64 id="64">tooltip=Ansicht vergrößern</v64>
+    <v65 id="65">tooltip=Ansicht verkleinern</v65>
+    <v66 id="66">tooltip=Momentan geladene PDF lokal speichern</v66>
+    <v67 id="67">tooltip=Konfigurationsbereich anzeigen/ausblenden</v67>
+    <v68 id="68">tooltip=Sprachen ...</v68>
+    <v69 id="69">tooltip=Anzeigen aller Dateianhänge dieses PDF-Dokumentes</v69>
+    <v70 id="70">tooltip=Anzeigen aller Signaturen dieses PDF-Dokumentes</v70>
+    <v71 id="71">Fehler beim aufbauen der GUI.-br-Das Programm wird jetzt beendet.</v71>
+    <v72 id="72">Beim dekodieren der PDF ist ein Fehler aufgetreten.-br-Das Programm wird jetzt beendet.</v72>
+    <v73 id="73">Es ist ein Fehler beim Laden der lokalen PDF aufgetreten.-br-Das Programm wird jetzt beendet.</v73>
+    <v74 id="74">Es liegt ein Fehler im Downloadmodul vor.-br-Das Programm wird jetzt beendet.</v74>
+    <v75 id="75">Der PDF-Quellserver ist nicht erreichbar.-br-Das Programm wird jetzt beendet.</v75>
+    <v76 id="76">Beim Download der PDF ist ein unbekannter Fehler aufgetreten.-br-Das Programm wird jetzt beendet.</v76>
+    <v77 id="77">Die PDF ist beschädigt und kann nicht geladen werden.-br-Das Programm wird jetzt beendet.</v77>
+    <v78 id="78">0=PDF-Ansicht</v78>
+    <v79 id="79">1=XML-Ansicht</v79>
+    <v80 id="80">Bitte warten ...</v80>
+    <v81 id="81">Lade Kryptoprovider</v81>
+    <v82 id="82">Dokumente werden hochgeladen</v82>
+    <v83 id="83">Bitte platzieren Sie den Signaturstempel, indem Sie zunächst mit der rechten Maustaste ein Rechteck auf das Dokument "zeichnen". Platzieren Sie den Stempel anschließend an einer beliebigen Position oder Seite des Dokumentes. Klicken Sie nun mit der linken Maustaste um den Stempel zu fixieren und fortzufahren.</v83>
+    <v84 id="84">Leiten Sie den Signiervorgang ein, indem Sie auf den roten "Sign"-Button klicken.</v84>
+    <v85 id="85">Das PDF-Dokument ist nicht korrekt signiert worden. Der Upload wird abgebrochen.</v85>
+    <v86 id="86">Erwarte PIN-Eingabe ...</v86>
+    <v87 id="87">Bitte PIN über das Lesegerät eingeben</v87>
+    <v88 id="88">Signiere Dokument</v88>
+    <v89 id="89">Signaturen</v89>
+    <v90 id="90">Lade ...</v90>
+    <v91 id="91">Zeichne GUI ...</v91>
+    <v92 id="92">© Ruhr-Universität Bochum | 2011-3011 | JPDFSigner v. 1.1 RC</v92>
+    <v93 id="93">Der Aussteller ist nicht vertrauenswürdig</v93>
+    <v94 id="94">Der Aussteller ist vertrauenswürdig</v94>
+    <v95 id="95">Ausgestellt von:</v95>
+    <v96 id="96">Ausgestellt für (RUBCard-ID):</v96>
+    <v97 id="97">Unbekannt</v97>
+    <v98 id="98">Signaturen gültig</v98>
+    <v99 id="99">Nicht vertrauenswürdig</v99>
+    <v100 id="100">Dokument unbekannt</v100>
+    <v101 id="101">Das Kartenlesegerät, dass aus der Konfiguration ermittelt wurde, -br- konnte nicht geladen werden.</v101>
+
+    <v102 id="102">Dateiname</v102>
+    <v103 id="103">Beschreibung</v103>
+    <v104 id="104">Größe</v104>
+    <v105 id="105">Klicken Sie auf diese Ansicht um die Zertifikatdetails einzusehen</v105>
+    <v106 id="106">Pfad auswählen ...</v106>
+    <v107 id="107">Die eingegebene PIN ist falsch oder gesperrt.\nBitte wählen beachten Sie, dass nach dem dritte fehlerhaften Versucht ihre PIN gesperrt wird.</v107>
+    <v108 id="108">Es ist ein Fehler aufgetreten.\Weitere Informationen sind den Logs zu entnehmen.</v108>
+    <v109 id="109">Das Lesegerät kann nicht initialisiert werden.</v109>
+    <v110 id="110">Bitte wählen Sie zu erst einen Kartenleser aus</v110>
+    <v111 id="111">Die maximale Anzahl an geladenen Dokumenten wurde erreicht.\Alle weiteren Dokumente wurden verworfen.</v111>
+    <v112 id="112">Einige Dokumente konnten nicht geladen werden:</v112>
+    <v113 id="113">Wählen Sie bitte mindestens ein Dokument aus, das entfernt werden soll.</v113>
+    <v114 id="114">Zur Vervollständigung des Antrages, müssen noch einige Daten erfasst werden. Tragen Sie bitte alle Daten in die Felder ein und klicken Sie anschließend auf \"Speichern\".</v114>
+    <v115 id="115">Vorname:</v115>
+    <v116 id="116">Nachname:</v116>
+    <v117 id="117">Geb.Datum:</v117>
+    <v118 id="118">Zust.Personalrat:</v118>
+    <v119 id="119">Unterschriftsberechtigter</v119>
+    <v120 id="120">Speichern</v120>
+    <v121 id="121">Zurücksetzen</v121>
+    <v122 id="122">Bitte füllen Sie alle Felder aus</v122>
+    <v123 id="123">Keine Dokumente geladen. Bitte laden Sie mindestens ein Dokument</v123>
+    <v124 id="124">Achtung: Alle rot markierten Felder werden überschrieben! Fortsetzen?</v124>
+    <v125 id="125">Alle Dokumente besitzen nun die benötigten Nutzerdaten.\nMöchten Sie nun mit dem Upload der Dokumente beginnen?\n\nKlicken Sie auf 'NEIN' wenn Sie die Daten überprüfen oder korrigieren möchten.</v125>
+    <v126 id="126">Signaturvorgang abgeschlossen</v126>
+    <v127 id="127">Bitte beachten Sie die Mitteilungen auf der Folgeseite</v127>
+    <v128 id="128">Seiten an Fenstergröße anpassen</v128>
+  </fields>
+</jpdfsigner_language>
+

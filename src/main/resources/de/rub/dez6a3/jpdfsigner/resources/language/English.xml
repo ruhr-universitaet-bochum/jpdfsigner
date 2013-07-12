@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ JPDFSigner - Sign PDFs online using smartcards (English.xml)
+ Copyright (C) 2013  Ruhr-Universitaet Bochum - Daniel Moczarski, Haiko te Neues
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
+-->
+<jpdfsigner_language>
+  <displayedLanguageText>English</displayedLanguageText>
+  <base64Icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAflJREFUeNpinDRzn5qN3uFDt16+YWBg+Pv339+KGN0rbVP+//2rW5tf0Hfy/2+mr99+yKpyOl3Ydt8njEWIn8f9zj639NC7j78eP//8739GVUUhNUNuhl8//ysKeZrJ/v7z10Zb2PTQTIY1XZO2Xmfad+f7XgkXxuUrVB6cjPVXef78JyMjA8PFuwyX7gAZj97+T2e9o3d4BWNp84K1NzubTjAB3fH0+fv6N3qP/ir9bW6ozNQCijB8/8zw/TuQ7r4/ndvN5mZgkpPXiis3Pv34+ZPh5t23//79Rwehof/9/NDEgMrOXHvJcrllgpoRN8PFOwy/fzP8+gUlgZI/f/5xcPj/69e/37//AUX+/mXRkN555gsOG2xt/5hZQMwF4r9///75++f3nz8nr75gSms82jfvQnT6zqvXPjC8e/srJQHo9P9fvwNtAHmG4f8zZ6dDc3bIyM2LTNlsbtfM9OPHH3FhtqUz3eXX9H+cOy9ZMB2o6t/Pn0DHMPz/b+2wXGTvPlPGFxdcD+mZyjP8+8MUE6sa7a/xo6Pykn1s4zdzIZ6///8zMGpKM2pKAB0jqy4UE7/msKat6Jw5mafrsxNtWZ6/fjvNLW29qv25pQd///n+5+/fxDDVbcc//P/zx/36m5Ub9zL8+7t66yEROcHK7q5bldMBAgwADcRBCuVLfoEAAAAASUVORK5CYII=</base64Icon>
+  <fields>
+    <v0 id="0">Information</v0>
+    <v1 id="1">Question</v1>
+    <v2 id="2">Warning</v2>
+    <v3 id="3">Error</v3>
+    <v4 id="4">Ruhr-Universität Bochum | JPDFSigner - Signing PDF-Documents</v4>
+    <v5 id="5">Your Java-Version is not supported.-br- Please use at least version -br-The program will now exit und you will be redirected.</v5>
+    <v6 id="6">There is no source-PDF-document.-br-The program will now exit und you will be redirected.</v6>
+    <v7 id="7">There is no identifier/filename for the PDF-document.-br-The program will now exit und you will be redirected.</v7>
+    <v8 id="8">The destination-serverurl is not valid.-br-The program will now exit und you will be redirected.</v8>
+    <v9 id="9">The POST-request does not have an identifier.-br-The program will now exit und you will be redirected.</v9>
+    <v10 id="10">A fatal error occured.-br-The program will now exit und you will be redirected.</v10>
+    <v11 id="11">The document could not be saved.</v11>
+    <v12 id="12">The documentstructure is not valid and can not be signed.</v12>
+    <v13 id="13">The configuration has been saved.</v13>
+    <v14 id="14">The configuration could not be saved.</v14>
+    <v15 id="15">There is a problem with the certificates on your RUBCard.</v15>
+    <v16 id="16">An unknown error occured during the signing process.</v16>
+    <v17 id="17">The entered PIN is expired.</v17>
+    <v18 id="18">The entered PIN is wrong.</v18>
+    <v19 id="19">The entered PIN is locked.</v19>
+    <v20 id="20">The entered PIN is invalid.</v20>
+    <v21 id="21">The entered PIN must be numeric and exactly six characters long.</v21>
+    <v22 id="22">Please insert your RUBCard into the smartcard-reader.</v22>
+    <v23 id="23">The cryptoprovider could not initialize your RUBCard properly.</v23>
+    <v24 id="24">An error occurred during card access.</v24>
+    <v25 id="25">The operation was canceled.</v25>
+    <v26 id="26">The choosen smardcard-reader has been removed.-br-Please choose another in the configuration area.</v26>
+    <v27 id="27">There is an error in the reader device.</v27>
+    <v28 id="28">The cryptoprovider seems to be already logged in.-br-Please pull out your RUBCard, insert it and try again.</v28>
+    <v29 id="29">The crypto provider reports an unknown error.</v29>
+    <v30 id="30">The cryptoprovider could not be loaded.-br-The file was not found.</v30>
+    <v31 id="31">An error occurred during file access.</v31>
+    <v32 id="32">The crypto provider could not be logged out correctly.</v32>
+    <v33 id="33">The initiated process stops responding.-br-Please try again.</v33>
+    <v34 id="34">An unknown error occurred in the crypto provider.</v34>
+    <v35 id="35">Please draw a rectangle with your right mouse button.-br-Then place the stamp and click your left mouse button to initiate the signing process.</v35>
+    <v36 id="36">An error occurred during signingprocess.</v36>
+    <v37 id="37">An error occured during the upload process.</v37>
+    <v38 id="38">The PDF uploadserver is not reachable.</v38>
+    <v39 id="39">An error occurred in the uploadmodul.-br-The program will now exit und you will be redirected.</v39>
+    <v40 id="40">The signed PDF documents were successfully loaded on the server.-br-The program will now exit und you will be redirected.</v40>
+    <v41 id="41">An error occured during the upload process. Further information can be found on the following page.-br-The program will now exit und you will be redirected.</v41>
+    <v42 id="42">Error determining upload status.-br-Further information can be found on the following page.-br-The program will now exit und you will be redirected.</v42>
+    <v43 id="43">The upload server does not respont.-br-Further information can be found on the following page.-br-The program will now exit und you will be redirected.</v43>
+    <v44 id="44">An error occurred in the system.-br-Further information can be found on the following page.-br-The program will now exit und you will be redirected.</v44>
+    <v45 id="45">Choose path ...</v45>
+    <v46 id="46">While executing the configurator, an error occurred.-br-The program will now exit und you will be redirected.</v46>
+    <v47 id="47">Please select the smart card reader which is used for the signing process.</v47>
+    <v48 id="48">Please select the path to the crypto provider:</v48>
+    <v49 id="49">Search</v49>
+    <v50 id="50">0=Cardreader</v50>
+    <v51 id="51">1=Library</v51>
+    <v52 id="52">Please wait - Loading card reader ...</v52>
+    <v53 id="53">No card reader found</v53>
+    <v54 id="54">Error in crypto provider</v54>
+    <v55 id="55">Cannot create GUI.</v55>
+    <v56 id="56">Configurating</v56>
+    <v57 id="57">PDF</v57>
+    <v58 id="58">Verifying PDF</v58>
+    <v59 id="59">PDF-Attachments</v59>
+    <v60 id="60">Cannot finish the automatic configuration.-br-Please enter the path to a crypto provider.</v60>
+    <v61 id="61">Cannot finish the automatic configuration.-br-Please select a smart card reader in the configuration area.</v61>
+    <v62 id="62">tooltip=Browse left</v62>
+    <v63 id="63">tooltip=Browse right</v63>
+    <v64 id="64">tooltip=Zoom in</v64>
+    <v65 id="65">tooltip=Zoom out</v65>
+    <v66 id="66">tooltip=Save current document to file</v66>
+    <v67 id="67">tooltip=Show/hide configuration area</v67>
+    <v68 id="68">tooltip=Languages ...</v68>
+    <v69 id="69">tooltip=Show all attachments of this PDF document</v69>
+    <v70 id="70">tooltip=Show all signatures of this PDF document</v70>
+    <v71 id="71">Cannot create GUI-br-The program will now exit und you will be redirected.</v71>
+    <v72 id="72">Cannot decode base64 encoded PDF document.-br-The program will now exit und you will be redirected.</v72>
+    <v73 id="73">Cannot load PDF document from lokal file.-br-The program will now exit und you will be redirected.</v73>
+    <v74 id="74">There is an error in the download modul.-br-The program will now exit und you will be redirected.</v74>
+    <v75 id="75">The PDF source server is not reachable.-br-The program will now exit und you will be redirected.</v75>
+    <v76 id="76">Cannot download PDF document. An unknown error occurred.-br-The program will now exit und you will be redirected.</v76>
+    <v77 id="77">The PDF document is corrupt and can not be loaded.-br-The program will now exit und you will be redirected.</v77>
+    <v78 id="78">0=PDF-Viewer</v78>
+    <v79 id="79">1=XML-Viewer</v79>
+    <v80 id="80">Please wait ...</v80>
+    <v81 id="81">Loading crypto provider</v81>
+    <v82 id="82">Uploading documents</v82>
+    <v83 id="83">Please place the signature stamp. You have to draw a rectangle on the document by pressing and holding the right mouse button. Place the stamp then at any position/page of the document. Know click the left mouse button to fix the stamp and continue the signing process.</v83>
+    <v84 id="84">Initiate the signing process by clicking the red "Sign"-Button.</v84>
+    <v85 id="85">The document was not signed properly. The upload process was canceled.</v85>
+    <v86 id="86">Awaiting PIN entry ...</v86>
+    <v87 id="87">Please enter your PIN using the card reader</v87>
+    <v88 id="88">Signing document</v88>
+    <v89 id="89">Signatures</v89>
+    <v90 id="90">Loading ...</v90>
+    <v91 id="91">Painting GUI ...</v91>
+    <v92 id="92">© Ruhr-Universität Bochum | 2011-3011 | JPDFSigner v. 1.1 Beta</v92>
+    <v93 id="93">The issuer is not trustable</v93>
+    <v94 id="94">The issuer is trustable</v94>
+    <v95 id="95">Issued by:</v95>
+    <v96 id="96">Issued for (RUBCard-ID):</v96>
+    <v97 id="97">Unknown</v97>
+    <v98 id="98">Signatures verified</v98>
+    <v99 id="99">Not trustable</v99>
+    <v100 id="100">Document unknown</v100>
+    <v101 id="101">The card-reader that is in the configurationfile, could not be loaded. </v101>
+    <v102 id="102">Filename</v102>
+    <v103 id="103">Description</v103>
+    <v104 id="104">Size</v104>
+    <v105 id="105">Click to see certificatedetails</v105>
+    <v106 id="106">Choose path ...</v106>
+    <v107 id="107">The entered PIN is wrong.\nPlease note that your PIN will be locked after the third incorrect try.</v107>
+    <v108 id="108">An error occured.\nFor more information see the logs.</v108>
+    <v109 id="109">The reader can not be initialized.</v109>
+    <v110 id="110">Please choose a card reader in the configuration.</v110>
+    <v111 id="111">The maximum number of opened documents has been reached.\nAll other documents were discarded.</v111>
+    <v112 id="112">Some documents could not be loaded:</v112>
+    <v113 id="113">Please choose at least one document to remove.</v113>
+    <v114 id="114">The request needs some further information to complete. Please fill out all fields and click the 'Save'-Button.</v114>
+    <v115 id="115">Forename:</v115>
+    <v116 id="116">Surname:</v116>
+    <v117 id="117">Birthday:</v117>
+    <v118 id="118">Staff Council:</v118>
+    <v119 id="119">Auth. Signer:</v119>
+    <v120 id="120">Save</v120>
+    <v121 id="121">Reset</v121>
+    <v122 id="122">Please fill out all fields.</v122>
+    <v123 id="123">No documents loaded. Please load at least one document.</v123>
+    <v124 id="124">Attention: All red marked fields will be overwritten.</v124>
+    <v125 id="125">All documents now have the necessary user data.\nDo you want to proceed with the upload process?\n\nClick the 'no'-button if you want to correct or verify the entered data.</v125>
+    <v126 id="126">Signingprocess done</v126>
+    <v127 id="127">Please note the messages on the next page</v127>
+  </fields>
+</jpdfsigner_language>
+
