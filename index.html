@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jpdfsigner by ruhr-universitaet-bochum</title>
+    <title>JPDFSigner by ruhr-universitaet-bochum</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,9 +15,12 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Jpdfsigner</h1>
-        <p>Sign PDFs in webapplication using smartcards</p>
+        <h1>JPDFSigner</h1>
+        <p>PDF-Signatur in Webanwendungen per Smartcard</p>
+
         <p class="view"><a href="https://github.com/ruhr-universitaet-bochum/jpdfsigner">View the Project on GitHub <small>ruhr-universitaet-bochum/jpdfsigner</small></a></p>
+
+
         <ul>
           <li><a href="https://github.com/ruhr-universitaet-bochum/jpdfsigner/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/ruhr-universitaet-bochum/jpdfsigner/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -27,17 +28,208 @@
         </ul>
       </header>
       <section>
-        <h1>
-<a name="jpdfsigner" class="anchor" href="#jpdfsigner"><span class="octicon octicon-link"></span></a>jpdfsigner</h1>
+        <p><img src="http://ruhr-universitaet-bochum.github.io/jpdfsigner/images/rub_dez6_abt3_logo.png" alt=""></p>
 
-<p>Sign PDFs in webapplication using smartcards</p>
+<p><a href="https://www.youtube.com/watch?v=FxFfvprwBOY" title="Screencast"><img src="http://ruhr-universitaet-bochum.github.io/jpdfsigner/images/screencast_thumb.png" alt=""></a></p>
+
+<h2>
+<a name="einleitung" class="anchor" href="#einleitung"><span class="octicon octicon-link"></span></a>Einleitung</h2>
+
+<p>Mit dem JPDFSigner-Javaapplet können einzelne oder mehrere PDF-Dokumente per Smartcard signiert werden. Da es sich um ein Javaapplet handelt, kann es in jede Webapplikation eingebunden und parametrisiert werden. Anhand der Parameter wird anschließend das PDF-Dokument geladen und angezeigt. Nach erfolgreich durchgeführter Signatur, wird die PDF auf einen Zielserver geladen und der Browser, auf eine Ergebnisseite weitergeleitet.</p>
+
+<p>Das JPDFSigner-Javaapplet ist eine Eigenentwicklung der Ruhr-Universität Bochum und findet gegenwärtig ihren Einsatz innerhalb der Universität. Trotz zuverlässiger Funktionalität wurde die Weiterentwicklung dieser Version eingestellt. Geplant ist eine Neuentwicklung (JPDFSigner 2) auf Basis folgender Projekte:</p>
+
+<ul>
+<li>RUB Style Java Look&amp;Feel</li>
+<li>RUB EasyP11</li>
+<li>RUB EasyAPDU</li>
+<li>RUB CardCertificateManager Applet Framework</li>
+</ul><p>(Diese Projekte werden bald auf GitHub veröffentlicht)</p>
+
+<p>Das Applet ist funktionsfähig, beinhaltet jedoch zahlreiche proprietäre Implementierungen (Design, Texte mit Bezug auf die Ruhr-Universität etc.), die nicht konfigurierbar sondern fest einkompiliert sind. Hierfür muss ggf. der Quelltext angepasst und das Applet neu kompiliert werden. Der Sinn der Veröffentlichung dieses Projektes liegt im Wesentlichen darin, den Quellcode als offene Codereferenz zur Verfügung zu stellen. Der Code ist relativ straight-forward und bietet unter Anderem folgende Implementierungen:</p>
+
+<ul>
+<li>PDF Signatur mit (DFN-)Zeitstempel via iText &amp; Bouncycastle</li>
+<li>Signaturverifizierung</li>
+<li>HTTP Requests unter Java</li>
+<li>PDF Rendering unter Java</li>
+<li>Look&amp;Feel-Implementierungen mit Swing</li>
+<li>PKCS11 unter Java (SunPKCS11)</li>
+</ul><h2>
+<a name="mglicher-use-case-antragsverwaltung" class="anchor" href="#mglicher-use-case-antragsverwaltung"><span class="octicon octicon-link"></span></a>Möglicher Use-Case: Antragsverwaltung</h2>
+
+<p>Folgender typischer abstrakter Workflow soll das Einsatzszenario des JPDFSigners deutlich machen. Die PDF trägt dabei neben der optischen Repräsentation des Dokuments zusätzliche Nutzdaten in XML-Form, die zur elektronischen Weiterverarbeitung benötigt werden.
+<img src="http://ruhr-universitaet-bochum.github.io/jpdfsigner/images/workflow.png" alt=""></p>
+
+<ol>
+<li>Mitarbeiter signiert Antrag mit personalisierter Smartcard.</li>
+<li>Signierter Antrag wird in der Datenbank der Antragsverwaltung gespeichert oder dem Workflow hinzugefügt.</li>
+<li>Vorgesetzter wird über den Antrag des Mitarbeiters informiert (z.B. automatisiert per Mail oder durch Workflowengine), prüft und signiert diesen wiederum mit seiner personalisierten Smartcard.</li>
+<li>Zweifach signiertes PDF-Dokument wird in der Antragsverwaltung gespeichert bzw. dem Workflow zurückgeführt.</li>
+<li>Verwaltungsmitarbeiter erhält Benachrichtigung über neuen Antrag. Dieser wird von einem Verwaltungsangestellten bearbeitet, geprüft und signiert.</li>
+<li>XML-Nutzdaten werden aus der PDF extrahiert um weitere automatisierte Prozesse zu starten (z.B. Aktualisierung des Urlaubskontos oder initiieren von Verrechnungsprozessen). </li>
+<li>Antrag mit allen Signaturen wird zurück an den Antragsteller geschickt.</li>
+</ol><h2>
+<a name="kompilieren" class="anchor" href="#kompilieren"><span class="octicon octicon-link"></span></a>Kompilieren</h2>
+
+<p>Das Projekt lässt sich nur unter dem Oracle/Sun JDK &gt;= 1.6 kompilieren weil die SunPKCS11 API verwendet wird. Diese ist ausschließlich im Oracle/Sun JDK vorhanden.</p>
+
+<p>Die folgenden Schritte wurden unter Linux Mint 14, git 1.7.10.4
+und maven 2.2.1 getestet.</p>
+
+<h3>
+<a name="linux" class="anchor" href="#linux"><span class="octicon octicon-link"></span></a>Linux</h3>
+
+<ol>
+<li>Git installieren</li>
+</ol><blockquote>
+<p><code># sudo apt-get install git</code></p>
+</blockquote>
+
+<ol>
+<li>Maven installieren</li>
+</ol><blockquote>
+<p><code># apt-get install maven</code></p>
+</blockquote>
+
+<ol>
+<li>Projektverzeichnis anlegen</li>
+</ol><blockquote>
+<p><code># mkdir ~/jpdfsigner</code></p>
+</blockquote>
+
+<ol>
+<li>Projekt herunterladen</li>
+</ol><blockquote>
+<p><code># cd ~/jpdfsigner</code>  <br><code># git clone https://github.com/ruhr-universitaet-bochum/jpdfsigner</code></p>
+</blockquote>
+
+<ol>
+<li>
+<p>In das Arbeitsverzeichnis wechseln</p>
+
+<blockquote>
+<p><code># cd ./jpdfsigner</code></p>
+</blockquote>
+</li>
+<li>
+<p>Projekt kompilieren</p>
+
+<blockquote>
+<p><code># mvn install</code></p>
+</blockquote>
+</li>
+</ol><h3>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h3>
+
+<ol>
+<li>Git installieren</li>
+</ol><blockquote>
+<p><a href="http://msysgit.github.io">Git for Windows</a></p>
+</blockquote>
+
+<ol>
+<li>Maven installieren</li>
+</ol><blockquote>
+<p><a href="http://maven.apache.org/guides/getting-started/windows-prerequisites.html">Maven on Windows</a></p>
+</blockquote>
+
+<ol>
+<li>Projektverzeichnis anlegen</li>
+</ol><blockquote>
+<p><code># cd C:\jpdfsigner</code></p>
+</blockquote>
+
+<ol>
+<li>Projekt herunterladen</li>
+</ol><blockquote>
+<p><code># cd C:\jpdfsigner</code>  <br><code># git clone https://github.com/ruhr-universitaet-bochum/jpdfsigner</code></p>
+</blockquote>
+
+<ol>
+<li>
+<p>In das Arbeitsverzeichnis wechseln</p>
+
+<blockquote>
+<p><code># cd ./jpdfsigner</code></p>
+</blockquote>
+</li>
+<li>
+<p>Projekt kompilieren</p>
+
+<blockquote>
+<p><code># mvn install</code></p>
+</blockquote>
+</li>
+</ol><h4>
+<a name="ausfhren" class="anchor" href="#ausfhren"><span class="octicon octicon-link"></span></a>Ausführen:</h4>
+
+<blockquote>
+<p><code># java -jar ./target/jpdfsigner-1.2.0-Release-jar-with-dependencies.jar</code></p>
+</blockquote>
+
+<h4>
+<a name="projekt-clean-entfernt-das-maven-target-verzeichnis" class="anchor" href="#projekt-clean-entfernt-das-maven-target-verzeichnis"><span class="octicon octicon-link"></span></a>Projekt clean (entfernt das Maven target-Verzeichnis):</h4>
+
+<blockquote>
+<p><code># mvn clean</code></p>
+</blockquote>
+
+<h2>
+<a name="dokumentation" class="anchor" href="#dokumentation"><span class="octicon octicon-link"></span></a>Dokumentation</h2>
+
+<p>Das Benutzerhandbuch befindet sich unter „jpdfsigner12RC_userdocumentation.doc“ im Stammverzeichnis des Master-Branchs.</p>
+
+<p>Quellcodekommentare sowie JavaDoc-Dokumentation fehlen nahezu komplett und werden durch die Einstellung des Projektes nicht mehr nach gepflegt.</p>
+
+<h2>
+<a name="pkcs11-middleware" class="anchor" href="#pkcs11-middleware"><span class="octicon octicon-link"></span></a>PKCS11 Middleware</h2>
+
+<p>Die PKCS11 Middleware ist eine Bibliothek, die zahlreiche Funktionen für Kryptographie-Token wie z.B. Smartcards bereit stellt. Diese Bibliothek unterliegt dem PKCS#11-Standard und bietet somit eine standardisierte Schnittstelle für Anwendungen, die Operationen auf Kryptografie-Token durchführen. Es gibt verschiedene Hersteller die PKCS11-Bibliotheken anbieten. Einige davon sind OpenSC, CryptoVision und OpenLimit wobei OpenSC kostenfrei ist.</p>
+
+<p>JPDFSigner verwendet diese PKCS11 Schnittstelle und benötigt deswegen eine PKCS11 Middleware. DIE MIDDLEWARE WIRD NICHT MIT DEM JPDFSigner APPLET AUSGELIEFERT UND MUSS SELBER BEZOGEN WERDEN. Für welche Middleware man sich entscheidet hängt davon ab, welchen Smartcard-Typen man bedienen möchte und ob man sich für eine opensource oder kommerzielle Version entscheidet.</p>
+
+<p>Wenn man sich dann für eine entsprechende Middleware entschieden hat, muss diese an das Applet "angestöpselt" werden. Dies passiert einmalig in den Einstellungen des JPDFSigner-Applets. Das bedeutet: Jeder Nutzer der das Applet über eine Webanwendung startet um PDFs zu signieren, muss diese Middleware installieren und im Applet einmalig konfigurieren. Näheres hierzu kann in der Benutzerdokumentation nachgelesen werden.</p>
+
+<h2>
+<a name="bibliotheken" class="anchor" href="#bibliotheken"><span class="octicon octicon-link"></span></a>Bibliotheken</h2>
+
+<p>JPDFSigner verwendet folgende Bibliotheken</p>
+
+<ul>
+<li>Log4J 1.2.15 - <strong><em>Apache License v. 2.0</em></strong>
+</li>
+<li>Bouncycastle 1.45 - <strong><em>X11 (MIT) License</em></strong>
+
+<ul>
+<li>bcmail-jdk16</li>
+<li>bcprov-jdk16</li>
+<li>bctsp-jdk16</li>
+</ul>
+</li>
+<li>iText 5.0.6 - <strong><em>AGPL License</em></strong>
+</li>
+<li>JDom 1.1 - <strong><em>Apache License v. 2.0 (without acknowledgment clause)</em></strong>
+</li>
+<li>PDF Renderer - <strong><em>LGPL License v. 2.1</em></strong>
+</li>
+<li>rsyntaxtextarea - <strong><em>BSD (modified → see developer website)</em></strong>
+</li>
+<li>commons-logging 1.1.1 - <strong><em>Apache License v. 2.0</em></strong>
+</li>
+<li>ICEpdf 4.3.0 - <strong><em>Apache License v. 2.0</em></strong>
+</li>
+</ul><h2>
+<a name="bei-fragen-" class="anchor" href="#bei-fragen-"><span class="octicon octicon-link"></span></a>Bei Fragen ...</h2>
+
+<p>... zum Quellcode oder zur Nutzung: kurze Mail an daniel.moczarski [ a t ] uv.ruhr-uni-bochum.de</p>
       </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ruhr-universitaet-bochum">ruhr-universitaet-bochum</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/ruhr-universitaet-bochum">ruhr-universitaet-bochum</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
